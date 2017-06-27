@@ -33,7 +33,7 @@ export default class Component5 extends Component {
   {
     return(
     <View style={styles.row}>
-      <Text style = {styles.rowText}>{user.name};{user.email}</Text>
+      <Text style = {styles.rowText}>{user.name}; {user.email}</Text>
     </View>
     );
   }
