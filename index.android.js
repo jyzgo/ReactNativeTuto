@@ -4,6 +4,7 @@ import {AppRegistry,Text,View,Image,StyleSheet} from 'react-native';
 import Component5 from './app/components/Component5/Component5';
 import Component6 from './app/components/Component6/Component6';
 import FixedDimensionBasic from './app/components/FixedDimensionBasic';
+import  TextComponent from './app/components/Movies';
 
 
 class Blink extends Component {
@@ -38,31 +39,13 @@ class Greeting extends Component {
 //let png = '1';
 const png = "https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg";
 export default class myapp extends Component {
-
-
-  render(){
-    let pic = {
-      uri :png
-    };
-        //<Text>Hellow</Text>
-    return(
-
-
-<View style={{height:100,width:150}}>
-              <FixedDimensionBasic/>
-</View>
-
-    );
-  }
+    render(){
+        return(
+            <TextComponent/>
+        );
+    }
 }
 
-//       <View style={{alignItems:'center'}}>
-// // <Image source = {pic} style = {{width:193,height:110}}/>
-// // <Text>Dame</Text>
-// // <Greeting hellId ="helyel"/>
-// // <Blink t="blink"/>
-// // <Text style={styles.big,styles.green}>Big red,Bold Green </Text>
-//   </View>
 
 const styles = StyleSheet.create({
   big:{
